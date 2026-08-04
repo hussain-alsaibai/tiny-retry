@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tiny-retry"
+version = "1.0.0"
+description = "Zero-dependency retry with jitter, backoff, and circuit breaker. Sync + async."
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.9"
+authors = [{name = "OpenClaw", email = "hussain.alsaibai@gmail.com"}]
+keywords = ["retry", "backoff", "circuit-breaker", "resilience", "async"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Intended Audience :: Developers",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+
+[project.urls]
+Homepage = "https://github.com/hussain-alsaibai/tiny-retry"
+Repository = "https://github.com/hussain-alsaibai/tiny-retry"
+Issues = "https://github.com/hussain-alsaibai/tiny-retry/issues"
+
+[tool.setuptools]
+py-modules = ["tiny_retry"]
+
+[tool.pytest.ini_options]
+testpaths = ["test_tiny_retry.py"]
+python_files = ["test_*.py"]
